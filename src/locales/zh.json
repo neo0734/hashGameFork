@@ -1,0 +1,28 @@
+{
+  "app": {
+    "title": "OnePlay哈希游戏",
+    "welcome": "欢迎来到游戏！",
+    "home": "首页",
+    "game": "游戏",
+    "sound": "声音",
+    "language": "语言",
+    "volume": "音量",
+    "settings": "设置",
+    "playSound": "播放声音",
+    "mute": "静音",
+    "unmute": "取消静音",
+    "playDemoSound": "播放演示声音"
+  },
+  "buttons": {
+    "start": "开始游戏",
+    "stop": "停止",
+    "restart": "重新开始",
+    "continue": "继续"
+  },
+  "game": {
+    "score": "分数",
+    "highScore": "最高分",
+    "level": "等级",
+    "gameOver": "游戏结束"
+  }
+}

@@ -1,0 +1,116 @@
+/* Tailwind CSS 基础导入 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局基础样式 */
+:root {
+  /* 定义自定义颜色变量，与tailwind.config.js中的配置对应 */
+  --color-primary: #165dff;
+  --color-secondary: #6b7280;
+  --color-dark: #1f2937;
+  --color-light: #110f10;
+
+  /* 字体配置 */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 设置HTML根元素字体大小，用于rem转换 */
+html {
+  font-size: 16px; /* 默认字体大小，与postcss-pxtorem的rootValue保持一致 */
+}
+
+/* 响应式字体大小，根据屏幕宽度动态调整 */
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* 可以选择性地添加JS脚本以实现更精确的动态调整 */
+/*
+<script>
+  // 动态设置html的fontSize
+  function setHtmlFontSize() {
+    const html = document.documentElement;
+    const screenWidth = html.clientWidth;
+    // 限制最大值和最小值
+    const fontSize = Math.min(Math.max(screenWidth / 20, 14), 18);
+    html.style.fontSize = fontSize + 'px';
+  }
+  
+  // 初始化
+  setHtmlFontSize();
+  // 监听窗口大小变化
+  window.addEventListener('resize', setHtmlFontSize);
+  window.addEventListener('orientationchange', setHtmlFontSize);
+</script>
+*/
+
+.bg-primary {
+  background-color: var(--color-light);
+}
+
+/* 基础样式重置 */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: KronaOne;
+}
+
+/* 确保根元素占满整个视口 */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 继承Tailwind的按钮样式 */
+button {
+  @apply transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+/* 继承Tailwind的链接样式 */
+a {
+  @apply text-primary hover:text-primary/80 transition-colors;
+}
+
+/* 自定义工具类 */
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #0040c1 100%);
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-hover {
+    @apply hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1;
+  }
+  
+  /* 加载动画 - 三个点依次显示 */
+  @keyframes dot {
+    0%, 60%, 100% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+  }
+}

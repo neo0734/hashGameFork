@@ -1,0 +1,28 @@
+{
+  "app": {
+    "title": "OnePlay Hash Game",
+    "welcome": "Welcome to the game!",
+    "home": "Home",
+    "game": "Game",
+    "sound": "Sound",
+    "language": "Language",
+    "volume": "Volume",
+    "settings": "Settings",
+    "playSound": "Play Sound",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "playDemoSound": "Play Demo Sound"
+  },
+  "buttons": {
+    "start": "Start Game",
+    "stop": "Stop",
+    "restart": "Restart",
+    "continue": "Continue"
+  },
+  "game": {
+    "score": "Score",
+    "highScore": "High Score",
+    "level": "Level",
+    "gameOver": "Game Over"
+  }
+}

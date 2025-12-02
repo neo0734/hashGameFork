@@ -1,0 +1,144 @@
+.signin-area {
+  position: relative;
+  display: inline-block;
+
+  &.dashboard-signin {
+    width: 100%;
+
+    .signin-btn {
+      height: 48px;
+      border-radius: 12px;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      padding: 0 24px;
+      cursor: pointer;
+      font-weight: 500;
+      font-family: 'DMSans-Light';
+      transition: background 0.2s;
+      width: 100%;
+
+      &:hover {
+        opacity: 0.8;
+        background: transparent;
+      }
+    }
+  }
+
+  .signin-btn {
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 24px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'DMSans-Light';
+    transition: background 0.2s;
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+  }
+
+  .trans-btn {
+    background: #3c3a3b;
+  }
+
+  .signin-dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    min-width: 325px;
+    background: #242223;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 16px 0 0 0;
+    z-index: 100;
+    border: 1px solid rgba(128, 137, 150, 0.15);
+
+    &.top {
+      bottom: 40px;
+      top: auto;
+      left: 30px;
+    }
+
+    .dropdown-menu-title {
+      padding: 12px 24px;
+      background: #414043;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      margin: 12px 24px;
+      width: 280px;
+    }
+
+    .dropdown-menu-list {
+      padding: 0 0 8px 0;
+
+      .dropdown-menu-item {
+        padding: 0 24px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+          background: rgba(128, 137, 150, 0.08);
+        }
+
+        .dropdown-menu-icon {
+          width: 20px;
+          height: 20px;
+          margin-right: 12px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .dropdown-menu-divider {
+      height: 1px;
+      background: rgba(128, 137, 150, 0.15);
+      margin: 0;
+      border: none;
+    }
+
+    .dropdown-menu-disconnect {
+      margin: 32px 24px 24px;
+      color: #477cfc;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 0;
+      cursor: pointer;
+      background-color: #f422ff33;
+      border-radius: 16px;
+
+      .dropdown-menu-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+        display: inline-block;
+
+        &.blue {
+          filter: brightness(1.5) saturate(2);
+        }
+      }
+
+      .blue {
+        color: #f422ff;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .signin-dropdown-menu {
+      top: 40px;
+      min-width: 180px;
+    }
+  }
+}

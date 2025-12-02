@@ -1,0 +1,68 @@
+/* 字体定义 - TTF 字体引入配置 */
+
+/* 注意：这里是字体配置文件，实际使用时需要将 TTF 字体文件放置在 fonts 目录下 */
+
+/* 定义 DMSans 字体 */
+@font-face {
+  font-family: 'DMSans';
+  src: url('./DMSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 定义 KronaOne 字体 */
+@font-face {
+  font-family: 'KronaOne';
+  src: url('./KronaOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Shuzi';
+  src: url('./shuzi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 中文字体示例 */
+/*
+@font-face {
+  font-family: 'ChineseFont';
+  src: url('./ChineseFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ChineseFont';
+  src: url('./ChineseFont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* 字体变量定义 */
+:root {
+  /* 字体家族定义 */
+  --font-family-sans: var(--font-family-KronaOne);
+  --font-family-DMSans: 'DMSans', sans-serif;
+  --font-family-KronaOne: 'KronaOne', sans-serif;
+  --font-family-Shuzi: 'Shuzi', sans-serif;
+
+  /* 如果需要中文字体，可以在这里定义 */
+  /* --font-family-chinese: 'ChineseFont', sans-serif; */
+}
+
+/* 全局字体设置 */
+html {
+  font-family: var(--font-family-sans);
+}
+
+body {
+  font-family: inherit;
+}

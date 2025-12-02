@@ -1,0 +1,16 @@
+=== Sui 钱包私钥导出 ===
+导出时间: 2025-01-24
+网络: testnet
+
+=== 钱包 1: reverent-emerald (活跃) ===
+地址: 0x67a83d54bc7e96196c6939457044d811497e20a86f7f627a7ccee0a92332538d
+私钥: AMeiZddPBOmaQU4RzWr3eVFpSedrAGuXR0izFFQkcBux
+
+=== 钱包 2: thirsty-avanturine ===
+地址: 0x750cc74111738bcccb610ac14925582234cd81ac008a65b1baa9646719cb7250
+私钥: AFYPHwsXGc5Kghf7P0DuoCUivPeOxrtaSm+AN1tu6+RY
+
+=== 重要提醒 ===
+⚠️  请妥善保管私钥信息，不要泄露给任何人
+⚠️  建议将私钥存储在安全的离线设备上
+⚠️  可以使用这些私钥导入到其他Sui钱包应用 

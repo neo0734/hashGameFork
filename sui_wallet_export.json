@@ -1,0 +1,32 @@
+{
+  "export_date": "2025-01-24",
+  "network": "testnet",
+  "active_address": "0x67a83d54bc7e96196c6939457044d811497e20a86f7f627a7ccee0a92332538d",
+  "wallets": [
+    {
+      "alias": "reverent-emerald",
+      "address": "0x67a83d54bc7e96196c6939457044d811497e20a86f7f627a7ccee0a92332538d",
+      "public_key_base64": "AK1TelU6SWw09CpUbhjnPS5nQ/5pDfbaX6ey9BzSqC1X",
+      "private_key_base64": "AMeiZddPBOmaQU4RzWr3eVFpSedrAGuXR0izFFQkcBux",
+      "is_active": true
+    },
+    {
+      "alias": "thirsty-avanturine", 
+      "address": "0x750cc74111738bcccb610ac14925582234cd81ac008a65b1baa9646719cb7250",
+      "public_key_base64": "APg4QEOkx6l301BibUHH+PMTPfhUM5P1Zs3BW5+sgJAG",
+      "private_key_base64": "AFYPHwsXGc5Kghf7P0DuoCUivPeOxrtaSm+AN1tu6+RY",
+      "is_active": false
+    }
+  ],
+  "config_files": {
+    "keystore_path": "/Users/fangyuanfei/.sui/sui_config/sui.keystore",
+    "aliases_path": "/Users/fangyuanfei/.sui/sui_config/sui.aliases",
+    "client_config_path": "/Users/fangyuanfei/.sui/sui_config/client.yaml"
+  },
+  "backup_instructions": [
+    "1. 保存此文件到安全位置",
+    "2. 私钥信息非常重要，请妥善保管",
+    "3. 可以使用私钥导入到其他Sui钱包",
+    "4. 建议使用硬件钱包存储大额资产"
+  ]
+} 
